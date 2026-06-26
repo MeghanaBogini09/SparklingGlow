@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sparkling Glow — Premium beauty salon. Hair, nails, facials, waxing, eyebrows & more." />
+  <title>Sparkling Glow | Beauty Salon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Floating decor -->
+  <div class="floating-shapes" aria-hidden="true">
+    <span class="shape shape-1"></span>
+    <span class="shape shape-2"></span>
+    <span class="shape shape-3"></span>
+    <span class="shape shape-4"></span>
+    <span class="shape shape-5"></span>
+  </div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">Sparkling <em>Glow</em></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&q=80" alt="Luxury salon interior" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content container">
+      <p class="hero-tag reveal">Est. 2018 · Premium Beauty Studio</p>
+      <h1 class="hero-title reveal">
+        Where Beauty<br />
+        <span class="title-accent">Meets Elegance</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Hair · Nails · Facials · Waxing · Eyebrows &amp; beyond.<br />
+        Your complete destination for timeless glamour.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#services" class="btn btn-primary">Explore Services</a>
+        <a href="#contact" class="btn btn-outline">Book Appointment</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num">50+</span>
+          <span class="stat-label">Services</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">12K+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">4.9★</span>
+          <span class="stat-label">Rating</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee">
+      <span>Haircut</span><span>✦</span>
+      <span>Facial</span><span>✦</span>
+      <span>O3 Hydra</span><span>✦</span>
+      <span>Manicure</span><span>✦</span>
+      <span>Pedicure</span><span>✦</span>
+      <span>Nail Art</span><span>✦</span>
+      <span>Waxing</span><span>✦</span>
+      <span>Eyebrow</span><span>✦</span>
+      <span>Bridal Makeup</span><span>✦</span>
+      <span>Keratin</span><span>✦</span>
+      <span>Hair Spa</span><span>✦</span>
+      <span>Gel Nails</span><span>✦</span>
+      <span>Haircut</span><span>✦</span>
+      <span>Facial</span><span>✦</span>
+      <span>O3 Hydra</span><span>✦</span>
+      <span>Manicure</span><span>✦</span>
+      <span>Pedicure</span><span>✦</span>
+      <span>Nail Art</span><span>✦</span>
+      <span>Waxing</span><span>✦</span>
+      <span>Eyebrow</span><span>✦</span>
+      <span>Bridal Makeup</span><span>✦</span>
+      <span>Keratin</span><span>✦</span>
+      <span>Hair Spa</span><span>✦</span>
+      <span>Gel Nails</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Our Expertise</span>
+        <h2 class="section-title">Complete Beauty<br /><em>Services Menu</em></h2>
+        <p class="section-desc">From head to toe — every treatment crafted with love, precision &amp; premium products.</p>
+      </div>
+
+      <!-- Category tabs -->
+      <div class="service-tabs reveal" role="tablist">
+        <button class="tab active" data-tab="all" role="tab">All</button>
+        <button class="tab" data-tab="hair" role="tab">Hair</button>
+        <button class="tab" data-tab="face" role="tab">Face &amp; Skin</button>
+        <button class="tab" data-tab="nails" role="tab">Nails</button>
+        <button class="tab" data-tab="body" role="tab">Body &amp; Wax</button>
+        <button class="tab" data-tab="brows" role="tab">Brows &amp; Lashes</button>
+        <button class="tab" data-tab="bridal" role="tab">Bridal &amp; Makeup</button>
+      </div>
+
+      <div class="services-grid" id="servicesGrid">
+
+        <!-- HAIR -->
+        <article class="service-card reveal" data-category="hair">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80" alt="Haircut styling" loading="lazy" />
+            <span class="card-badge">Popular</span>
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Hair</span>
+            <h3>Haircut &amp; Styling</h3>
+            <p>Precision cuts, layers, bobs, pixie &amp; blow-dry styling for every face shape.</p>
+            <span class="card-price">From ₹499</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal" data-category="hair">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&q=80" alt="Hair coloring" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Hair</span>
+            <h3>Hair Color &amp; Highlights</h3>
+            <p>Global color, balayage, ombre, streaks &amp; root touch-up with ammonia-free options.</p>
+            <span class="card-price">From ₹1,499</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal" data-category="hair">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=80" alt="Hair spa treatment" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Hair</span>
+            <h3>Hair Spa &amp; Treatment</h3>
+            <p>Deep conditioning, scalp therapy, dandruff control &amp; damage repair rituals.</p>
+            <span class="card-price">From ₹899</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal" data-category="hair">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb9d6?w=600&q=80" alt="Keratin treatment" loading="lazy" />
+            <span class="card-badge">Premium</span>
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Hair</span>
+            <h3>Keratin &amp; Smoothening</h3>
+            <p>Silky straight, frizz-free hair with long-lasting keratin &amp; rebonding treatments.</p>
+            <span class="card-price">From ₹4,999</span>
+          </div>
+        </article>
+
+        <!-- FACE & SKIN -->
+        <article class="service-card reveal" data-category="face">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80" alt="Classic facial" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Face &amp; Skin</span>
+            <h3>Classic Facial</h3>
+            <p>Cleansing, exfoliation, steam, extraction &amp; mask for refreshed glowing skin.</p>
+            <span class="card-price">From ₹799</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal" data-category="face">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80" alt="O3 Hydra facial" loading="lazy" />
+            <span class="card-badge">Bestseller</span>
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Face &amp; Skin</span>
+            <h3>O3 Hydra Facial</h3>
+            <p>Ozone therapy + deep hydration. Detox, brighten &amp; plump skin instantly.</p>
+            <span class="card-price">From ₹2,499</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal" data-category="face">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1515377901643-4a9748da9608?w=600&q=80" alt="Gold facial" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Face &amp; Skin</span>
+            <h3>Gold &amp; Anti-Aging Facial</h3>
+            <p>24K gold infusion, collagen boost &amp; wrinkle reduction for youthful radiance.</p>
+            <span class="card-price">From ₹1,999</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal" data-category="face">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=80" alt="Clean up and bleach" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Face &amp; Skin</span>
+            <h3>Clean-up, Bleach &amp; De-tan</h3>
+            <p>Quick glow rituals — fruit cleanup, herbal bleach &amp; sun tan removal.</p>
+            <span class="card-price">From ₹399</span>
+          </div>
+        </article>
+
+        <!-- NAILS -->
+        <article class="service-card reveal" data-category="nails">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80" alt="Manicure" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Nails</span>
+            <h3>Manicure</h3>
+            <p>Classic, spa &amp; gel manicure with cuticle care, massage &amp; polish.</p>
+            <span class="card-price">From ₹499</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal" data-category="nails">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1519415510239-0bd18852552a?w=600&q=80" alt="Pedicure" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Nails</span>
+            <h3>Pedicure</h3>
+            <p>Relaxing foot soak, scrub, callus removal &amp; perfect polish finish.</p>
+            <span class="card-price">From ₹599</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal" data-category="nails">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1632345031431-239c69238458?w=600&q=80" alt="Nail art" loading="lazy" />
+            <span class="card-badge">Trending</span>
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Nails</span>
+            <h3>Nail Art &amp; Extensions</h3>
+            <p>Creative designs, 3D art, acrylic, gel extensions &amp; French tips.</p>
+            <span class="card-price">From ₹799</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal" data-category="nails">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80" alt="Gel nails" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Nails</span>
+            <h3>Gel Polish &amp; Refill</h3>
+            <p>Chip-free gel color, soak-off removal &amp; nail strengthening treatments.</p>
+            <span class="card-price">From ₹699</span>
+          </div>
+        </article>
+
+        <!-- BODY & WAX -->
+        <article class="service-card reveal" data-category="body">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80" alt="Waxing service" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Body &amp; Wax</span>
+            <h3>Full Body Waxing</h3>
+            <p>Arms, legs, underarms, bikini &amp; full body with premium Rica wax.</p>
+            <span class="card-price">From ₹299</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal" data-category="body">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1540555700478-3be7198b09ff?w=600&q=80" alt="Body massage" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Body &amp; Wax</span>
+            <h3>Body Massage &amp; Spa</h3>
+            <p>Swedish, aromatherapy &amp; deep tissue massage for total relaxation.</p>
+            <span class="card-price">From ₹1,299</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal" data-category="body">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1515377901643-4a9748da9608?w=600&q=80" alt="Body polishing" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Body &amp; Wax</span>
+            <h3>Body Polishing &amp; Wrap</h3>
+            <p>Exfoliating scrub, chocolate wrap &amp; skin brightening body rituals.</p>
+            <span class="card-price">From ₹1,499</span>
+          </div>
+        </article>
+
+        <!-- BROWS & LASHES -->
+        <article class="service-card reveal" data-category="brows">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&q=80" alt="Eyebrow threading" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Brows &amp; Lashes</span>
+            <h3>Eyebrow Threading &amp; Shaping</h3>
+            <p>Perfect arch definition with threading, waxing &amp; tweezing expertise.</p>
+            <span class="card-price">From ₹99</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal" data-category="brows">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=600&q=80" alt="Brow lamination" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Brows &amp; Lashes</span>
+            <h3>Brow Tint &amp; Lamination</h3>
+            <p>Fluffy laminated brows, henna tint &amp; microblading for fuller arches.</p>
+            <span class="card-price">From ₹599</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal" data-category="brows">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=600&q=80" alt="Lash extensions" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Brows &amp; Lashes</span>
+            <h3>Lash Extensions &amp; Lift</h3>
+            <p>Classic, volume lashes, lash lift &amp; tint for dramatic eyes.</p>
+            <span class="card-price">From ₹1,499</span>
+          </div>
+        </article>
+
+        <!-- BRIDAL & MAKEUP -->
+        <article class="service-card reveal" data-category="bridal">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=80" alt="Bridal makeup" loading="lazy" />
+            <span class="card-badge">Luxury</span>
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Bridal &amp; Makeup</span>
+            <h3>Bridal Makeup</h3>
+            <p>HD &amp; airbrush bridal looks with trial, draping &amp; pre-bridal packages.</p>
+            <span class="card-price">From ₹8,999</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal" data-category="bridal">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&q=80" alt="Party makeup" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Bridal &amp; Makeup</span>
+            <h3>Party &amp; Engagement Makeup</h3>
+            <p>Glam evening looks, engagement glow &amp; special occasion styling.</p>
+            <span class="card-price">From ₹2,499</span>
+          </div>
+        </article>
+
+        <article class="service-card reveal" data-category="bridal">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&q=80" alt="Saree draping" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Bridal &amp; Makeup</span>
+            <h3>Saree Draping &amp; Hair Do</h3>
+            <p>Traditional &amp; modern draping with elegant updos &amp; accessory styling.</p>
+            <span class="card-price">From ₹499</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Our Work</span>
+        <h2 class="section-title">Beauty <em>Gallery</em></h2>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item gi-large">
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80" alt="Salon styling" loading="lazy" />
+          <div class="gallery-overlay"><span>Hair Styling</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&q=80" alt="Nail art work" loading="lazy" />
+          <div class="gallery-overlay"><span>Nail Art</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&q=80" alt="Facial treatment" loading="lazy" />
+          <div class="gallery-overlay"><span>Facials</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&q=80" alt="Hair color" loading="lazy" />
+          <div class="gallery-overlay"><span>Hair Color</span></div>
+        </div>
+        <div class="gallery-item gi-wide">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=900&q=80" alt="Salon ambiance" loading="lazy" />
+          <div class="gallery-overlay"><span>Our Studio</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1519415510239-0bd18852552a?w=500&q=80" alt="Pedicure spa" loading="lazy" />
+          <div class="gallery-overlay"><span>Pedicure</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section class="packages" id="packages">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Special Offers</span>
+        <h2 class="section-title">Curated <em>Packages</em></h2>
+        <p class="section-desc">Save more with our signature combo deals — perfect for pampering days.</p>
+      </div>
+      <div class="packages-grid">
+        <div class="package-card reveal">
+          <div class="package-ribbon">Value</div>
+          <h3>Glow Day</h3>
+          <p class="package-price">₹1,999 <span>/ session</span></p>
+          <ul>
+            <li>Classic Facial</li>
+            <li>Manicure + Pedicure</li>
+            <li>Eyebrow Threading</li>
+            <li>Upper Lip Wax</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-sm">Book Package</a>
+        </div>
+        <div class="package-card package-featured reveal">
+          <div class="package-ribbon">Most Popular</div>
+          <h3>Hydra Queen</h3>
+          <p class="package-price">₹4,499 <span>/ session</span></p>
+          <ul>
+            <li>O3 Hydra Facial</li>
+            <li>Hair Spa Treatment</li>
+            <li>Gel Manicure</li>
+            <li>Full Leg Wax</li>
+            <li>Complimentary Head Massage</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-sm">Book Package</a>
+        </div>
+        <div class="package-card reveal">
+          <div class="package-ribbon">Bridal</div>
+          <h3>Pre-Bridal Bliss</h3>
+          <p class="package-price">₹14,999 <span>/ 6 sessions</span></p>
+          <ul>
+            <li>3 Facials + 2 Bleach</li>
+            <li>4 Full Body Wax</li>
+            <li>2 Mani-Pedi Sessions</li>
+            <li>Hair Spa + Trim</li>
+            <li>Bridal Trial Makeup</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-sm">Book Package</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-images reveal">
+        <div class="about-img-main">
+          <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb9d6?w=600&q=80" alt="Stylist at work" loading="lazy" />
+        </div>
+        <div class="about-img-accent">
+          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&q=80" alt="Beauty detail" loading="lazy" />
+        </div>
+        <div class="about-badge">
+          <span class="badge-num">8+</span>
+          <span class="badge-text">Years of<br />Excellence</span>
+        </div>
+      </div>
+      <div class="about-content reveal">
+        <span class="section-tag">About Us</span>
+        <h2 class="section-title">The Art of<br /><em>Sparkling Glow</em></h2>
+        <p>Welcome to Sparkling Glow — where classic elegance meets modern beauty innovation. Our team of certified stylists and therapists bring world-class techniques with a personal touch.</p>
+        <p>We use only premium, skin-safe products from leading international brands. Every visit is a luxurious escape designed to leave you radiant, confident, and utterly pampered.</p>
+        <div class="about-features">
+          <div class="feature">
+            <span class="feature-icon">♡</span>
+            <div>
+              <strong>Hygiene First</strong>
+              <p>Sterilized tools &amp; single-use kits</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">✦</span>
+            <div>
+              <strong>Expert Team</strong>
+              <p>Trained &amp; certified professionals</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">❋</span>
+            <div>
+              <strong>Premium Products</strong>
+              <p>L'Oréal, OPI, Rica &amp; more</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Reviews</span>
+        <h2 class="section-title">What Clients <em>Say</em></h2>
+      </div>
+      <div class="testimonial-slider reveal">
+        <div class="testimonial-track" id="testimonialTrack">
+          <blockquote class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>"The O3 Hydra facial left my skin glowing for days! Best salon experience I've ever had. Absolutely divine ambiance."</p>
+            <footer>— Priya Sharma</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>"Their nail art is incredible — so creative and long-lasting. The baby pink interior makes you feel like royalty."</p>
+            <footer>— Ananya Reddy</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>"Got my bridal makeup done here. Flawless HD finish that lasted all night. The team is so warm and professional."</p>
+            <footer>— Meera Patel</footer>
+          </blockquote>
+        </div>
+        <div class="testimonial-dots" id="testimonialDots">
+          <button class="dot active" aria-label="Review 1"></button>
+          <button class="dot" aria-label="Review 2"></button>
+          <button class="dot" aria-label="Review 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Book Your<br /><em>Appointment</em></h2>
+          <p>Walk in or book ahead — we can't wait to make you glow.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Visit Us</strong>
+                <p>123 Beauty Lane, Glow City, 500001</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Call / WhatsApp</strong>
+                <p><a href="https://wa.me/919959550153" target="_blank" rel="noopener noreferrer" class="whatsapp-link">+91 99595 50153</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🕐</span>
+              <div>
+                <strong>Hours</strong>
+                <p>Mon – Sat: 10 AM – 8 PM<br />Sunday: 11 AM – 6 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Select Service</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service...</option>
+              <optgroup label="Hair">
+                <option>Haircut &amp; Styling</option>
+                <option>Hair Color &amp; Highlights</option>
+                <option>Hair Spa</option>
+                <option>Keratin / Smoothening</option>
+              </optgroup>
+              <optgroup label="Face &amp; Skin">
+                <option>Classic Facial</option>
+                <option>O3 Hydra Facial</option>
+                <option>Gold / Anti-Aging Facial</option>
+                <option>Clean-up / Bleach / De-tan</option>
+              </optgroup>
+              <optgroup label="Nails">
+                <option>Manicure</option>
+                <option>Pedicure</option>
+                <option>Nail Art &amp; Extensions</option>
+                <option>Gel Polish</option>
+              </optgroup>
+              <optgroup label="Body">
+                <option>Waxing</option>
+                <option>Body Massage</option>
+                <option>Body Polishing</option>
+              </optgroup>
+              <optgroup label="Brows &amp; Lashes">
+                <option>Eyebrow Threading</option>
+                <option>Brow Lamination / Tint</option>
+                <option>Lash Extensions</option>
+              </optgroup>
+              <optgroup label="Makeup">
+                <option>Bridal Makeup</option>
+                <option>Party Makeup</option>
+              </optgroup>
+              <optgroup label="Packages">
+                <option>Glow Day Package</option>
+                <option>Hydra Queen Package</option>
+                <option>Pre-Bridal Bliss</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message (optional)</label>
+            <textarea id="message" name="message" rows="3" placeholder="Any special requests..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Booking via WhatsApp ✦</button>
+          <p class="form-hint form-hint-important">
+            <strong>Important:</strong> WhatsApp will open with your details pre-filled.
+            You must tap the green <strong>Send ▶</strong> button in WhatsApp — the booking is not sent until you do that.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-icon">✦</span>
+          <span class="logo-text">Sparkling <em>Glow</em></span>
+        </a>
+        <p>Your sanctuary for beauty, wellness &amp; self-care. Because you deserve to sparkle.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="https://wa.me/919959550153" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Hair &amp; Styling</a></li>
+          <li><a href="#services">Facials &amp; O3 Hydra</a></li>
+          <li><a href="#services">Nails &amp; Nail Art</a></li>
+          <li><a href="#services">Waxing &amp; Body</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Stay Glowing</h4>
+        <p>Get offers &amp; beauty tips in your inbox.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Your email" required />
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Sparkling Glow. All rights reserved.</p>
+      <p class="footer-credit">Crafted with ♡ for beauty lovers</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919959550153" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- WhatsApp booking modal -->
+  <div class="wa-modal" id="waModal" hidden>
+    <div class="wa-modal-backdrop" id="waModalBackdrop"></div>
+    <div class="wa-modal-box" role="dialog" aria-labelledby="waModalTitle" aria-modal="true">
+      <button type="button" class="wa-modal-close" id="waModalClose" aria-label="Close">×</button>
+      <div class="wa-modal-icon">💬</div>
+      <h3 id="waModalTitle">Almost done!</h3>
+      <p class="wa-modal-text">WhatsApp will open to <strong>+91 99595 50153</strong> with your booking details.</p>
+      <ol class="wa-modal-steps">
+        <li>Check the message in WhatsApp</li>
+        <li>Tap the green <strong>Send ▶</strong> button</li>
+        <li>Wait for salon confirmation</li>
+      </ol>
+      <p class="wa-modal-warn">If you don't tap Send, the salon will <em>not</em> receive your request.</p>
+      <a href="#" class="btn btn-primary btn-full" id="waModalOpen">Open WhatsApp &amp; Send</a>
+      <p class="wa-modal-fallback">Link not opening? <a href="#" id="waModalLink">Tap here to open WhatsApp</a></p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
